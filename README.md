@@ -1,5 +1,5 @@
 # Robotics' Project
-**Home created to host files and whatnot related to Robot Design, Control &amp; Applications course's final project.
+**Home created to host files and whatnot related to Robot Design, Control &amp; Applications course's final project.**
 
 ## For a link to the whole report, click [here](www.google.com).
 
