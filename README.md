@@ -12,4 +12,6 @@
 
 #### For the Appendix A, on how to install the libraries used in this project, click [here](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixA.md).
 
+#### For the Appendix B, on the code for the robot, click [here](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixB.ino).
 
+#### For the Appendix C, on the code for the IR beacon, click [here](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixC.ino).
