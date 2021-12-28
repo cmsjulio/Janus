@@ -8,3 +8,8 @@
 
 
 #### For the Arduino code and explanation of its implementation, check [project's files](www.github.com).
+
+
+#### For the Appendix A, on how to install the libraries used in this project, click [here](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixA.md).
+
+
