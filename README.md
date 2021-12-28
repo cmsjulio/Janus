@@ -4,7 +4,7 @@
 #### For the project report, click [here](https://github.com/cmsjulio/RoboticsProject/blob/main/report.md).
 
 
-#### For a homemade robot testing video, click [here](www.gmail.com).
+#### For a homemade robot testing video, click [here](https://drive.google.com/file/d/0B8L2rUQTVgrzMmlKZjZURXdVZTQ/view?usp=sharing&resourcekey=0-U74lbci5NstVayuxVadhiQ).
 
 
 #### For the Arduino code and explanation of its implementation, check [project's files](www.github.com).
