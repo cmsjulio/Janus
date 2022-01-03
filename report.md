@@ -33,7 +33,13 @@ The connections for these components are as shown in the tables below:
 
 For the ultrasonic sensors, [see this table](https://imgur.com/Pf8tcSk).
 
+![img4-table1](https://user-images.githubusercontent.com/88581731/147907838-990503ab-e1fc-414c-8730-4b491761c6e4.png)
+
+
 For the IR sensors, [see this table](https://imgur.com/6dycmWJ).
+
+![img5-table2](https://user-images.githubusercontent.com/88581731/147907863-661a06ad-8895-4fda-a127-11b2838faec2.png)
+
 
 Each component is soldered on its position and jumpers are soldered to connect common pins to common trails – all the pins that are connected to Arduino ground pin, for example, are linked to a common trail through a jumper, so that later only one connection between PCB and Arduino is necessary to link all of such pins to the Arduino ground pin. For the IR sensors, check the datasheet of the TSOP38238 to find the position of pins OUT, GND and Vs – available at http://www.vishay.com/docs/82491/tsop382.pdf. The GND, ECHO, TRIG and VCC pins of the HC-SR04 sensor are displayed but in case of need, its datasheet can be found at http://www.micropik.com/PDF/HCSR04.pdf.
 
@@ -43,14 +49,20 @@ Note: Do not plug in the Adafruit motor shield jumper. Instead, connect the Ardu
 
 For the beacon, the manufacturing is much simpler as shown in the image below. One pin of a 330 ohms resistor is connected to the anode pin of the IR LED – the anode pin can be identified by the longer leg – and the other one to the Arduino pin #3. The cathode pin of the IR LED is connected to ground. An external battery feeds the Arduino – positive was connected to “Vin” and negative to ground.
 
-Note that you cannot see whether the IR LED is working or not, as it is emitting IR, a non-visible light wave. Most cameras presently are equipped with filters, and that might be the reason why [this image](https://imgur.com/FrY0jTd) does not show any sign of functionality, even though the code was already uploaded. 
+Note that you cannot see whether the IR LED is working or not, as it is emitting IR, a non-visible light wave. Most cameras presently are equipped with filters, and that might be the reason why [the picture below](https://imgur.com/FrY0jTd) does not show any sign of functionality, even though the code was already uploaded when it was taken. 
+
+![img6-beacon](https://user-images.githubusercontent.com/88581731/147907986-f729b703-0456-4c24-b975-0992e4afb188.png)
+
 
 With the beacon system set, uploading the codes for each Arduino is all that is left.
 
 
 # Uploading the Code for the Robot
 
-An Arduino was responsible for controlling the robot. The code was developed with the help of three external libraries. Directions on how to install the libraries needed are available in Appendix A. The code for controlling the robot is available in Appendix B. The idea behind the code can be summarized with the pseudo code, [here](https://imgur.com/KV2YVNj):
+An Arduino was responsible for controlling the robot. The code was developed with the help of three external libraries. Directions on how to install the libraries needed are available in Appendix A. The code for controlling the robot is available in Appendix B. The idea behind the code can be summarized with the pseudo code, [as follows](https://imgur.com/KV2YVNj):
+
+![img7-pcode](https://user-images.githubusercontent.com/88581731/147908064-e5c99032-e21b-4bb9-95ef-36e285971251.png)
+
 
 The first priority of the robot’s code will be to avoid a detected frontal obstacle within the distance of LIMIT. According to the code in Appendix B, such distance was set at 30cm. If that is the condition, it goes through the obstacle avoidance maneuver, using the right and left ultrasonic sensors to decide where to turn. If the right distance detected is greater than the left distance, it turns right; otherwise it turns left.
 
