@@ -59,7 +59,7 @@ With the beacon system set, uploading the codes for each Arduino is all that is 
 
 # Uploading the Code for the Robot
 
-An Arduino was responsible for controlling the robot. The code was developed with the help of three external libraries. Directions on how to install the libraries needed are available in Appendix A. The code for controlling the robot is available in Appendix B. The idea behind the code can be summarized with the pseudo code, [as follows](https://imgur.com/KV2YVNj):
+An Arduino was responsible for controlling the robot. The code was developed with the help of three external libraries. Directions on how to install the libraries needed are available in [Appendix A](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixA.md) . The code for controlling the robot is available in [Appendix B](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixB.ino) . The idea behind the code can be summarized with the pseudo code, [as follows](https://imgur.com/KV2YVNj):
 
 ![img7-pcode](https://user-images.githubusercontent.com/88581731/147908064-e5c99032-e21b-4bb9-95ef-36e285971251.png)
 
@@ -77,7 +77,7 @@ If the robot is moving, but not exactly as explained in the pseudo code, place i
 
 # Uploading the Code for the Beacon
 
-The code for the beacon is available in Appendix C. It was developed with the help of the IRremote library. Instructions on how to install the libraries needed for this project can be found in Appendix A. The code makes the beacon send the Sony TV power signal continuously so that the robot can track it.
+The code for the beacon is available in [Appendix C](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixC.ino). It was developed with the help of the IRremote library. Instructions on how to install the libraries needed for this project can be found in Appendix A. The code makes the beacon send the Sony TV power signal continuously so that the robot can track it.
 
 To upload the code to the Arduino, connect it to a computer with the Arduino IDE software and libraries listed on Appendix A installed, then copy and paste the code shown in Appendix C and hit upload.
 
