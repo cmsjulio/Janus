@@ -12,7 +12,8 @@ An infrared 950nm LED was used as the beacon emitter. An Arduino Uno board was u
 
 The controller was built using an Arduino Uno board with an Adafruit v2.3 Motor Shield. The motor shield was added for the sake of simplicity; although it could have been possible and cheaper to use an H bridge or relays. The shield stacking headers did not come with the motors and had to be bought separately. For more information on how to set up the Adafruit shield, check the Adrafuit website at https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-headers.
 
-A PCB board was also used, along with different wires and jumpers. Also, two 9V batteries were used to power the robot and the beacon system separately. A list with all components that were purchased for this project and its respective prices ![is available here](https://imgur.com/I4Ofgb9). ![test](<blockquote class="imgur-embed-pub" lang="en" data-id="a/I4Ofgb9"  ><a href="//imgur.com/a/I4Ofgb9">Components used in the project and its costs</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+A PCB board was also used, along with different wires and jumpers. Also, two 9V batteries were used to power the robot and the beacon system separately. A list with all components that were purchased for this project and its respective prices [is available here](https://imgur.com/I4Ofgb9).![img1-list](https://user-images.githubusercontent.com/88581731/147907440-575f9a7b-2dd5-4b92-98a3-f69b6e8670f2.png)
+
 
 [In this picture here](https://imgur.com/X8Xc0yz) are shown the chassis, the Arduino UNO Board, one of the TSOP38238 IR receivers, one of the HC-SR04 Ultrasonic sensors, the IR LED with its 330 ohms resistor soldered together and the Adafruit Shield for Arduino V2.3.
 
