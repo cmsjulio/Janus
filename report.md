@@ -64,11 +64,11 @@ An Arduino was responsible for controlling the robot. The code was developed wit
 ![img7-pcode](https://user-images.githubusercontent.com/88581731/147908064-e5c99032-e21b-4bb9-95ef-36e285971251.png)
 
 
-The first priority of the robot’s code will be to avoid a detected frontal obstacle within the distance of LIMIT. According to the code in Appendix B, such distance was set at 30cm. If that is the condition, it goes through the obstacle avoidance maneuver, using the right and left ultrasonic sensors to decide where to turn. If the right distance detected is greater than the left distance, it turns right; otherwise it turns left.
+The first priority of the robot’s code will be to avoid a detected frontal obstacle within the distance of LIMIT. According to the code in [Appendix B](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixB.ino), such distance was set at 30cm. If that is the condition, it goes through the obstacle avoidance maneuver, using the right and left ultrasonic sensors to decide where to turn. If the right distance detected is greater than the left distance, it turns right; otherwise it turns left.
 
 When it is the case that no frontal obstacle is detected, the robot will then check for the readings on the infrared sensors. If a signal is detected on the right IR sensor only, the robot will then turn right. If a signal is detected on the left IR sensor only, the robot will then turn left. If a signal is detected on both sides, or no signal detected at all, the robot will go forward.
 
-To upload the code to the Arduino, connect it to a computer with the Arduino IDE software and libraries listed on Appendix A installed, then copy and paste the code shown in Appendix B and hit upload.
+To upload the code to the Arduino, connect it to a computer with the Arduino IDE software and libraries listed on [Appendix A](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixA.md) installed, then copy and paste the code shown in [Appendix B](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixB.ino) and hit upload.
 
 Notice that right after the code was uploaded; the robot motors might instantly start. The robot will proceed as specified previously with the help of the pseudo code, and since the beacon is not sending any signal yet, the robot will wander and avoid collisions.
 
@@ -77,9 +77,9 @@ If the robot is moving, but not exactly as explained in the pseudo code, place i
 
 # Uploading the Code for the Beacon
 
-The code for the beacon is available in [Appendix C](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixC.ino). It was developed with the help of the IRremote library. Instructions on how to install the libraries needed for this project can be found in Appendix A. The code makes the beacon send the Sony TV power signal continuously so that the robot can track it.
+The code for the beacon is available in [Appendix C](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixC.ino). It was developed with the help of the IRremote library. Instructions on how to install the libraries needed for this project can be found in [Appendix A](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixA.md). The code makes the beacon send the Sony TV power signal continuously so that the robot can track it.
 
-To upload the code to the Arduino, connect it to a computer with the Arduino IDE software and libraries listed on Appendix A installed, then copy and paste the code shown in Appendix C and hit upload.
+To upload the code to the Arduino, connect it to a computer with the Arduino IDE software and libraries listed on [Appendix A](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixA.md) installed, then copy and paste the code shown in [Appendix C](https://github.com/cmsjulio/RoboticsProject/blob/main/AppendixC.ino) and hit upload.
 
 After the code was uploaded, the beacon is ready to be tracked by the IR receivers in the robot. Note regarding the pseudo code, that even when the robot is receiving signal on both IR receivers, the robot goes forward. That means the robot might get to the beacon, but it will not stop once it has reached the beacon – as the controller cannot calculate the distance between IR receiver and IR source. Further, other sensors could be attached to the robot in order to solve this matter.
 
