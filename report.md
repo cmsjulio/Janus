@@ -92,6 +92,9 @@ There would also be the possibility of improving the robots ability to adapt to 
 
 As to its intelligence, it is still one of a simple reflex agent.  Given its sensors, there are not too many more options available. With the right set of precise actuators, it would be possible for the robot to keep track of its path as it travels.  It is already possible currently, but not to the point where one can trust that there will be no significant error accumulation. Allowing for the robot to store its current state and use this information to create a model for the environment could then be used as a parameter for future decisions.
 
+# Testing video
+
+For a homemade robot testing video, click [here](https://drive.google.com/file/d/0B8L2rUQTVgrzMmlKZjZURXdVZTQ/view?usp=sharing&resourcekey=0-U74lbci5NstVayuxVadhiQ).
 
 
 
